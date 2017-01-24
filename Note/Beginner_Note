@@ -1,0 +1,58 @@
+#Get docker information
+docker info
+
+
+#Check version
+docker --version
+docker-compose --version
+docker-machine --version
+
+
+#Show current docker image/containers
+docker ps
+
+
+#Run helloworld to verify that Docker is running
+docker run hello-world
+1. The Docker client contacted the Docker daemon.
+2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+3. The Docker daemon created a new container from that image which runs the
+executable that produces the output you are currently reading.
+4. The Docker daemon streamed that output to the Docker client, which sent it
+to your terminal.
+
+
+#Pull ubuntu from Docker Hub and run bash
+docker run -it ubuntu bash
+docker run -it ubuntu sh
+
+
+#Dockerized web server.
+docker run -d -p 80:80 --name webserver nginx
+go to http://localhost/ or http://localhost:80
+docker stop webserver
+
+
+#File sharing
+You can decide which directories on your Mac to share with containers.
+Add a Directory - Click + and navigate to the directory you want to add.
+
+
+#Docker Daemon
+You can configure options on the Docker daemon that determine how your containers will run. You can configure some Basic options on the daemon with interactive settings, or switch to Advanced to edit the JSON directly.
+The settings offered on Basic dialog can be configured directly in the JSON as well. This version just surfaces some of the commmon settings to make it easier to configure them.
+
+
+
+#CPUs
+By default, Docker for Mac is set to use 2 processors. You can increase processing power for the app by setting this to a higher number, or lower it to have Docker for Mac use fewer computing resources.
+
+#Memory
+By default, Docker for Mac is set to use 2 GB runtime memory, allocated from the total available memory on your Mac. You can increase the RAM on the app to get faster performance by setting this number higher (for example to 3) or lower (to 1) if you want Docker for Mac to use less memory.
+
+#Storage location
+You can specify the storage location of the Linux volume; i.e., where containers and images are stored.
+
+
+
+
