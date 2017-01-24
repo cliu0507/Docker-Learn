@@ -1,0 +1,12 @@
+How to Make Own Image?
+
+
+
+docker run docker/whalesay cowsay boo
+docker run docker/whalesay cowsay xxxxxx
+
+
+mkdir mydockerbuild
+cd mydockerbuild
+docker build -t docker-whale .
+

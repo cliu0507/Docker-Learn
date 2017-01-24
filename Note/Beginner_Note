@@ -7,8 +7,10 @@ docker --version
 docker-compose --version
 docker-machine --version
 
+#Show all images locally
+docker images
 
-#Show current docker image/containers
+#Show current running docker image/containers
 docker ps
 
 
