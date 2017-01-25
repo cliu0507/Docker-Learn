@@ -24,6 +24,15 @@ executable that produces the output you are currently reading.
 to your terminal.
 
 
+
+#Remove all container
+docker rm $(docker ps -a -q)
+
+
+#Remove all images
+docker rmi $(docker images -q)
+
+
 #Pull ubuntu from Docker Hub and run bash
 docker run -it ubuntu bash
 docker run -it ubuntu sh
